@@ -57,6 +57,8 @@ export const CrawlLinks: QuartzTransformerPlugin<Partial<Options>> = (userOpts) 
               ) {
                 let dest = node.properties.href as RelativeURL
                 const classes = (node.properties.className ?? []) as string[]
+                if (classes.includes("no-svg")) return;
+
                 const isExternal = isAbsoluteUrl(dest)
                 classes.push(isExternal ? "external" : "internal")
 

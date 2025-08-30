@@ -24,6 +24,10 @@ export default ((opts?: Options) => {
             </li>
           ))}
         </ul>
+        <p>
+            Background shamelessly stolen from
+            <a href="https://jzhao.xyz/"> https://jzhao.xyz/</a>
+        </p>
       </footer>
     )
   }

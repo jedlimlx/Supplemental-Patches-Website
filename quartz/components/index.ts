@@ -24,6 +24,9 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 
+import Downloads from "./Downloads"
+import OverlayExplorer from "./OverlayExplorer"
+
 export {
   ArticleTitle,
   Content,
@@ -50,4 +53,6 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  Downloads,
+  OverlayExplorer
 }

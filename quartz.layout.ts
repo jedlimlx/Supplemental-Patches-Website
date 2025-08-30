@@ -8,8 +8,9 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/jedlimlx/supplemental_patches",
+      Modrinth: "https://modrinth.com/mod/supplemental-patches",
+      CurseForge: "https://www.curseforge.com/minecraft/mc-mods/supplemental-patches",
     },
   }),
 }
@@ -26,7 +27,9 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
+    Component.MobileOnly(Component.OverlayExplorer()),
     Component.PageTitle(),
+    Component.Downloads(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -35,13 +38,12 @@ export const defaultContentPageLayout: PageLayout = {
           grow: true,
         },
         { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        { Component: Component.DesktopOnly(Component.ReaderMode()) },
       ],
     }),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer())
   ],
   right: [
-    Component.Graph(),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
@@ -51,7 +53,9 @@ export const defaultContentPageLayout: PageLayout = {
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
+    Component.MobileOnly(Component.OverlayExplorer()),
     Component.PageTitle(),
+    Component.Downloads(),
     Component.MobileOnly(Component.Spacer()),
     Component.Flex({
       components: [
@@ -62,7 +66,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer())
   ],
-  right: [],
+  right: []
 }

@@ -7,6 +7,10 @@
     flex-grow: 0.3;
   }
 
+  @media(max-width: 430px) {
+    display: none;
+  }
+
   & > .search-button {
     background-color: color-mix(in srgb, var(--lightgray) 60%, var(--light));
     border: none;

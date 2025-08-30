@@ -8,46 +8,46 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "Supplemental Patches",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "plausible",
+      provider: "cabin",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "supplemental-patches.pages.dev",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Space Mono",
+        body: "Space Grotesk",
+        code: "Space Mono",
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#f0f5f4",
+          lightgray: "#cfdce6",
+          gray: "#7a7380",
+          darkgray: "#4f4b4f",
+          dark: "#3a3b48",
+          secondary: "#17334f",
+          tertiary: "#5571a6",
+          highlight: "rgba(143, 159, 169, 0.05)",
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#100c1c",
+          lightgray: "#413266",
+          gray: "#6b4699",
+          darkgray: "#b18fcc",
+          dark: "#eadcf5",
+          secondary: "#9e30f2",
+          tertiary: "#7966cc",
+          highlight: "rgba(143, 159, 169, 0.05)",
           textHighlight: "#b3aa0288",
         },
       },
@@ -72,6 +72,8 @@ const config: QuartzConfig = {
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
       Plugin.Latex({ renderEngine: "katex" }),
+      Plugin.Carousel(),
+      Plugin.ClickableImages()
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [
@@ -89,7 +91,7 @@ const config: QuartzConfig = {
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
       // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
+      Plugin.CustomOgImages()
     ],
   },
 }

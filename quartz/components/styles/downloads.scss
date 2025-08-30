@@ -1,0 +1,27 @@
+.logo-container {
+  display: flex;
+  padding: 5px;
+  background: none;
+  max-width: 800px;
+  margin: -25px auto;
+
+  @media(max-width: 660px) {
+    display: none;
+  }
+}
+
+.logo-link {
+  transition: transform 0.2s ease;
+  z-index: 1;
+}
+
+.logo-link:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
