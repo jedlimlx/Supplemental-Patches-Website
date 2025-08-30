@@ -13,7 +13,8 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     analytics: {
-      provider: "cabin",
+      provider: "goatcounter",
+      websiteId: "supplemental-patches"
     },
     locale: "en-US",
     baseUrl: "supplemental-patches.pages.dev",
