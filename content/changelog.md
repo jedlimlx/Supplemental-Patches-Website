@@ -3,6 +3,8 @@ title: Technical Changelog
 ---
 ## 0.5.0-beta
 
+<img src="assets/versions/0.5.0-beta.png">
+
 **Fixes**
 - Fix issues with Enderscape nebula shaders not working with older versions of OpenGL due to use of C-style initialisers
 

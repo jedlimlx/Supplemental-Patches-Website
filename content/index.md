@@ -18,7 +18,7 @@ These additional shaders are patched into [Euphoria Patches](https://www.euphori
 
 Some of the most _exciting_ features of the mod include (for players):
 
-- Over 500 high-quality shaders for custom materials from a variety of popular mods (e.g. [Supplementaries](https://modrinth.com/mod/supplementaries), [Quark](https://modrinth.com/mod/quark), [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion))
+- Over 500 high-quality shaders for custom materials from a variety of popular mods (e.g. [Supplementaries](https://modrinth.com/mod/supplementaries), [Quark](https://modrinth.com/mod/quark), [Jaden's Nether Expansion](https://modrinth.com/mod/jadens-nether-expansion)). See full list [here](mod_list).
 - A custom End nebula skybox based on [Enderscape's](https://modrinth.com/mod/enderscape) End atmosphere
 - A cool fog effect based on the effect from [Doom and Gloom](https://modrinth.com/mod/doom-gloom)
 - Fixes to shader issues for many mods (e.g. [Endergetic Expansion](https://modrinth.com/mod/endergetic), [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic), [Doom and Gloom](https://modrinth.com/mod/doom-gloom))
@@ -41,7 +41,7 @@ For details on the supported areas that can be patched onto Euphoria Patches, ch
 **A:** Please report it to me first, do not bother the developers of Complementary Shaders / Euphoria Patches.
 
 **Q:** The shaders I added aren't showing. <br>
-**A:** Try reloading the shaderpack, after ensuring that the resource-pack is loaded. Alternatively, check which layer the block is being rendered in using the [Euphoria Companion](https://modrinth.com/mod/euphoria-companion) mod. Certain blocks (e.g. glass blocks) may be rendered as cutouts rather than translucent blocks. You will need to change the layer they are rendered under using [blocks.properties.json](documentation/properties.json).
+**A:** Try reloading the shaderpack, after ensuring that the resource-pack is loaded. Alternatively, check which layer the block is being rendered in using the [Euphoria Companion](https://modrinth.com/mod/euphoria-companion) mod. Certain blocks (e.g. certain glass blocks) may be rendered as cutouts rather than translucent blocks. You will need to change the layer they are rendered under using [block.properties.json](documentation/properties.json).
 
 **Q:** The built-in shaders aren't working. <br>
 **A:** Similarly, try reloading the shaderpack and ensuring that the built-in resource-pack is loaded.
