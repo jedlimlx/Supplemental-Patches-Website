@@ -33,18 +33,19 @@ title: List of Supported Mods
 
 # Nether Mods
 
-| Mod                      | Support         | Remarks                                               |
-| ------------------------ | --------------------- | ----------------------------------------------------- |
-| Soulful Nether           | *Full*     |                                                       |
+| Mod                      | Support   | Remarks                                               |
+| ------------------------ | --------- | ----------------------------------------------------- |
+| Soulful Nether           | *Full*    |                                                       |
 | Jaden's Nether Expansion | *Partial* | **TODO**<br>- Fix issues with Betrayed effect shaders |
-| Pigsteel                 | *Full*     |                                                       |
-| Nears                    | *Full*     |                                                       |
+| Pigsteel                 | *Full*    |                                                       |
+| Nears                    | *Full*    |                                                       |
+|                          |           |                                                       |
 
 # End Mods
 
-| Mod        | Support         | Remarks                                                                                                                                                                                                                          |
-| ---------- | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Enderscape | *Partial* | **Shader Fixes**<br>- Modify End lighting & skybox to match intended atmosphere<br><br>**Note**<br>- Enderscape atmosphere can be enabled even without the mod being installed<br><br>**TODO**<br>- Darken nebula based on biome |
+| Mod        | Support   | Remarks                                                                                                                                                                                                                            |
+| ---------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Enderscape | *Partial* | **Shader Fixes**<br>- Modified End lighting & skybox to match intended atmosphere<br><br>**Note**<br>- Enderscape atmosphere can be enabled even without the mod being installed<br><br>**TODO**<br>- Darken nebula based on biome |
 
 
 # Biome Mods
@@ -53,6 +54,13 @@ title: List of Supported Mods
 | ------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | Biomes O Plenty          | *Full* | **Biome-specific Effects**<br>- Organic waving of flesh blocks in Visceral Heap<br>- Spiral clouds in magical biomes<br>                   |
 | Oh The Biomes We've Gone | *Full* | **Biome-specific Effects**<br>- Special lightshafts in Pale Bog (same as the ones in the Pale Garden)<br>- Spiral clouds in magical biomes |
+
+# Particle Mods
+| Mod        | Support   | Remarks                                                                                                                                                                                    |
+| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Effective  | *Partial* | Requires <kbd>Ctrl</kbd>+<kbd>G</kbd> in 1.21.1 to display mist and waterfall cascade particles.<br><br>**TODO**<br>- Apply shaders to splash particles<br>- Volumetric mist effect 👀<br> |
+| Particular | *Full*    |                                                                                                                                                                                            |
+
 
 # Miscellaneous
 

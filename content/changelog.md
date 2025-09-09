@@ -1,6 +1,26 @@
 ---
 title: Technical Changelog
 ---
+## 0.5.1-beta
+
+<img src="assets/versions/0.5.1-beta.png">
+
+**Fixes**
+- Fix issues with IDs with `minecraft` namespace not properly replacing IDs in `*.properties` files
+- Fix issue with regenerating shaders with keybinds on Fabric
+- Replace all `endstone` with `endStone` so shaders will compile on case-sensitive filesystems (e.g. Linux) (thanks @Lightdrew)
+
+**Additions**
+- Add support for the following mods
+	- Effective
+	- Particular
+	- Upgrade Aquatic (updated to 1.21.1)
+- Add new waving function `minecraft:tall_waving_foliage_2` for foliage that glows (e.g. cave vines)
+
+**Changes**
+- System message is now outputted whenever the shaderpack is regenerated after a resource-pack reload
+
+
 ## 0.5.0-beta
 
 <img src="assets/versions/0.5.0-beta.png">
