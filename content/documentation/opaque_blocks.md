@@ -76,6 +76,8 @@ The following are the parameters specified in the JSON. **Bolded** and *italiciz
 `held_lighting` - Either `true` or `false`. Controls if the block should light up surroundings when held by the player. <br>
 
 `waving` - Specifies the type of waving motion that should be applied to the block. See ... for more details. <br>
+`reflection_handler` - Specifies how reflections should be handled for this block. For more information, see [this](reflection_handlers) page. Can be either a list of length `block_size` or a single handler to be applied to all IDs within this block. <br>
+
 `needs_voxelization` - Specifies if voxelization is needed. Voxelization, when ACL is enabled, allows blocks to identify what blocks surround them. <br>
 
 ## Examples

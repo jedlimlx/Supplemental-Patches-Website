@@ -20,6 +20,9 @@ The list of uniforms added by Supplemental Patches can be found below. (note: fo
 | `betrayed`                   | `float` | Returns `0` if there is no betrayed effect and `1` if there is.                                                                                                                                 | `0.0,1.0`   | Jaden's Nether Expansion |
 | `enderscapeNebulaColor`      | `vec3`  | The color of the nebula within current biome.                                                                                                                                                   | `[0,255]`   | Enderscape               |
 | `enderscapeNebulaAlpha`      | `float` | The opacity of the nebula within the current biome.                                                                                                                                             | `[0, 1]`    | Enderscape               |
+| `moonSize`                   | `float` | The moon size for the given lunar event that is occuring. The default size of the moon is 20.                                                                                                   | `[0,∞)`     | Enhanced Celestials      |
+| `moonColor`                  | `vec3`  | The colour of the moon for the given lunar event that is occuring.                                                                                                                              | `[0.0,1.0]` | Enhanced Celestials      |
+| `skylightColor`              | `vec3`  | The colour of the skylight for the given lunar event that is occuring.                                                                                                                          | `[0.0,1.0]` | Enhanced Celestials      |
 
 ## Mod Detection
 
@@ -66,6 +69,7 @@ An example is shown below, which detects if a player is within the Lost Caves bi
 The following are the parameters specified in the JSON. **Bolded** and *italicized* parameters are required.
 
 - ***`type`*** - The type of the uniform.
-- `name` - The name of the uniform.
+- ***`name`*** - The name of the uniform.
 - `code` - The custom uniform code (if the uniform is a custom uniform). Will be injected into `shader.properties`. See [this](https://shaders.properties/current/reference/shadersproperties/custom_uniforms/) for more information on custom uniforms.
+- `default` - The default value for this uniform.
 - `conditions` - A list of conditions for the uniform to be used (e.g. if a mod is installed).

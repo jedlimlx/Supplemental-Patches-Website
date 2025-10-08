@@ -4,6 +4,17 @@ title: Gallery
 
 Here's a showcase of many of the mods supported by Supplemental Patches' built-in resource-pack.
 
+# Cirrus Clouds
+
+<Carousel>
+<img src="assets/cirrus_clouds/1.png">
+<img src="assets/cirrus_clouds/2.png">
+<img src="assets/cirrus_clouds/3.png">
+<img src="assets/cirrus_clouds/4.png">
+<img src="assets/cirrus_clouds/5.png">
+</Carousel>
+
+
 # Enderscape
 
 <Carousel>
@@ -25,6 +36,24 @@ Here's a showcase of many of the mods supported by Supplemental Patches' built-i
 <img src="assets/doom_and_gloom/4.png">
 <img src="assets/doom_and_gloom/5.png">
 </Carousel>
+
+# Enhanced Celestials
+
+<Carousel>
+<img src="assets/enhanced_celestials/1.png">
+<img src="assets/enhanced_celestials/2.png">
+<img src="assets/enhanced_celestials/3.png">
+<img src="assets/enhanced_celestials/4.png">
+<img src="assets/enhanced_celestials/5.png">
+<img src="assets/enhanced_celestials/6.png">
+<img src="assets/enhanced_celestials/7.png">
+<img src="assets/enhanced_celestials/8.png">
+<img src="assets/enhanced_celestials/9.png">
+<img src="assets/enhanced_celestials/10.png">
+<img src="assets/enhanced_celestials/11.png">
+<img src="assets/enhanced_celestials/12.png">
+</Carousel>
+
 
 # Quark
 
@@ -56,6 +85,16 @@ Here's a showcase of many of the mods supported by Supplemental Patches' built-i
 <img src="assets/yungs_cave_biomes/5.png">
 </Carousel>
 
+# Cinderscapes
+
+<Carousel>
+<img src="assets/cinderscapes/1.png">
+<img src="assets/cinderscapes/2.png">
+<img src="assets/cinderscapes/3.png">
+<img src="assets/cinderscapes/4.png">
+<img src="assets/cinderscapes/5.png">
+<img src="assets/cinderscapes/6.png">
+</Carousel>
 
 # Jaden's Nether Expansion
 
@@ -132,4 +171,11 @@ Here's a showcase of many of the mods supported by Supplemental Patches' built-i
 <img src="assets/bwg/4.png">
 <img src="assets/bwg/5.png">
 <img src="assets/bwg/6.png">
+</Carousel>
+# Species
+
+<Carousel>
+<img src="assets/species/1.png">
+<img src="assets/species/2.png">
+<img src="assets/species/3.png">
 </Carousel>

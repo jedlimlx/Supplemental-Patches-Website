@@ -1,6 +1,37 @@
 ---
 title: Technical Changelog
 ---
+## 0.6.0-beta
+
+![[0.6.0-beta.png]]
+
+**Fixes**
+- Fixed the lack of emissivity on Spectres in Species
+- Fixed the uncoloured sky-light during lunar events in Enhanced Celestials
+- Fix issues where default value of uniforms is null and considered an unknown variable (by @[chililisoup](https://github.com/chililisoup))
+- Fixed unexpected nonwhite token in `lumiere_composter.glsl`, `enderscape_nebula.glsl` (by @[chililisoup](https://github.com/chililisoup))
+
+**Additions**
+- Add support for the following mods
+	- Cinderscapes
+	- Enderscape (updated to 1.1.0)
+	- Species
+	- Aloof
+	- Diamonds in the Rough
+	- Beeten
+	- Enhanced Celestials
+- Add new option `reflection_handlers` to specify how opaque blocks should be handled during world-space reflection
+- Add ability to inject new functions into `common_functions.glsl` which will be accessible everywhere
+- Add `CIRRUS_CLOUDS` option to turn the second layer of unbound clouds into cirrus clouds
+- Add new uniforms `moonSize`, `moonColor`, `skylightColor` to handle lunar events from Enhanced Celestials
+
+**Changes**
+- Updated to *Complementary Shaders 5.6 + Euphoria Patches 1.7.0*
+- Updated to Minecraft 1.21.9
+- Errors in the resourcepack and shaderpack are not outputted to the Minecraft chat
+- Significantly improved time taken for patching with over 10x improvement (by @[chililisoup](https://github.com/chililisoup))
+
+---
 ## 0.5.1-beta
 
 <img src="assets/versions/0.5.1-beta.png">
