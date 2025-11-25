@@ -25,6 +25,9 @@ Here's a showcase of many of the mods supported by Supplemental Patches' built-i
 <img src="assets/enderscape/5.png">
 <img src="assets/enderscape/6.png">
 <img src="assets/enderscape/7.png">
+<img src="assets/enderscape/8.png">
+<img src="assets/enderscape/9.png">
+<img src="assets/enderscape/10.png">
 </Carousel>
 
 # Doom & Gloom
@@ -35,6 +38,10 @@ Here's a showcase of many of the mods supported by Supplemental Patches' built-i
 <img src="assets/doom_and_gloom/3.png">
 <img src="assets/doom_and_gloom/4.png">
 <img src="assets/doom_and_gloom/5.png">
+<img src="assets/doom_and_gloom/6.png">
+<img src="assets/doom_and_gloom/7.png">
+<img src="assets/doom_and_gloom/8.png">
+<img src="assets/doom_and_gloom/9.png">
 </Carousel>
 
 # Enhanced Celestials

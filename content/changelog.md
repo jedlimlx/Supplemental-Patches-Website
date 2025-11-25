@@ -1,9 +1,42 @@
 ---
 title: Technical Changelog
 ---
+## 0.7.0-beta
+
+<img src="assets/versions/0.7.0-beta.png">
+
+**Fixes**
+- Fix issues with atmosphere color multipliers not working if Enderscape is installed
+- Fix game crashing if shaderpack fails to compile when Iris debug mode is off
+- Fix Doom and Gloom fog not working when effect is active
+- Fix crash when `ANIMATED_END_LAMP` is disabled
+- Fix crash when `GLOWING_BLOODCAP_MUSHROOM` is enabled
+
+**Additions**
+- Add support for the following mods
+	- Galosphere (updated to 1.21.5)
+	- Enderscape (updated to 1.21.10)
+	- Wetland Whimsy (updated to 2.0)
+	- Bountiful Fares
+	- Dungeons Delight
+	- Windswept
+- Add ability to easily create new `colortex` buffers
+- Add ability to refactor functions to add new parameters
+- Add support for End Flash within Enderscape for Minecraft 1.21.10
+- Add new uniform `enderscapeFlashColor` for the flash colors in different biomes in Enderscape
+
+**Changes**
+- Updated to *Complementary Shaders r5.6.1 + Euphoria Patches 1.7.8***
+- *Massively* improved look of emissive objects during Doom and Gloom fog
+- Changed various candle shaders not to be emissive when candles are not lit
+- Only include material shaders if the relevant mods are installed to reduce compilation time
+
+
+---
+
 ## 0.6.0-beta
 
-![[0.6.0-beta.png]]
+<img src="assets/versions/0.6.0-beta.png">
 
 **Fixes**
 - Fixed the lack of emissivity on Spectres in Species
@@ -50,7 +83,6 @@ title: Technical Changelog
 
 **Changes**
 - System message is now outputted whenever the shaderpack is regenerated after a resource-pack reload
-
 
 ## 0.5.0-beta
 
