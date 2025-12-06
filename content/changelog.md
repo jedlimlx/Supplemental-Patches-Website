@@ -1,6 +1,17 @@
 ---
 title: Technical Changelog
 ---
+## 0.7.1-beta
+
+<img src="assets/versions/0.7.1-beta.png">
+
+**Fixes**
+- Fix issue with duplicate buffers when reloading shaders
+- Fix issues with compatibility with Inventory Particles on Fabric 1.21.10
+
+**Changes**
+- Added debug message to indicate number of custom textures and buffers loaded
+
 ## 0.7.0-beta
 
 <img src="assets/versions/0.7.0-beta.png">
@@ -26,7 +37,7 @@ title: Technical Changelog
 - Add new uniform `enderscapeFlashColor` for the flash colors in different biomes in Enderscape
 
 **Changes**
-- Updated to *Complementary Shaders r5.6.1 + Euphoria Patches 1.7.8***
+- Updated to *Complementary Shaders r5.6.1 + Euphoria Patches 1.7.8*
 - *Massively* improved look of emissive objects during Doom and Gloom fog
 - Changed various candle shaders not to be emissive when candles are not lit
 - Only include material shaders if the relevant mods are installed to reduce compilation time
