@@ -1,6 +1,33 @@
 ---
 title: Technical Changelog
 ---
+## 0.8.0-beta
+
+
+<img src="assets/versions/0.8.0-beta.png">
+
+**Fixes**
+- Fix issue with missing settings for mods that are not uninstalled
+- Fix issues with particle shaders not working with Cobblemon installed
+
+**Additions**
+- Add support for the following mods
+	- Enderscape (updated to 2.1.0)
+	- Cobblemon
+- Added shaders for `enderscape:void_shale`
+- Add `USE_ENDERSCAPE_LIGHTMAP` option to use Enderscape lightmap in the End instead of the default
+- Add `ES_STAR_COLOR`, along with new uniforms `enderscapeStarColor`, `enderscapeStarAlpha` to allow stars to use the colors defined by Enderscape
+- Allow individual Pokemon to be given custom shaders (only on NeoForge for now, Fabric mixin doesn't want to work 😢)
+	- This is done by adding their showdown ids (e.g. `cobblemon:rowlet`) to entity.properties
+	- Only a handful of Pokemon have custom shaders now, more will come in the future
+	- This works for custom pokemon too
+- Added more information to in-game about page
+- Added documentation to wiki on defining mixins and custom fogs
+
+**Changes**
+- Updated to *Complementary Shaders r5.7.1 + Euphoria Patches 1.8.6*
+- `ANIMATED_END_LAMP` has been changed to be disabled by default
+
 ## 0.7.1-beta
 
 <img src="assets/versions/0.7.1-beta.png">

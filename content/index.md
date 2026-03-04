@@ -23,6 +23,7 @@ Some of the most _exciting_ features of the mod include (for players):
 - A custom End nebula skybox based on [Enderscape's](https://modrinth.com/mod/enderscape) End atmosphere
 - A cool fog effect based on the effect from [Doom and Gloom](https://modrinth.com/mod/doom-gloom)
 - Support for lunar events from [Enhanced Celestials](https://modrinth.com/mod/enhanced-celestials) (including ones added by other data-packs)
+- Custom shaders for various pokemon (e.g. Meowth, Graveler) in [Cobblemon](https://modrinth.com/mod/cobblemon) 
 - Fixes to shader issues for many mods (e.g. [Endergetic Expansion](https://modrinth.com/mod/endergetic), [Upgrade Aquatic](https://modrinth.com/mod/upgrade-aquatic), [Doom and Gloom](https://modrinth.com/mod/doom-gloom))
 - Fixed rendering of item shaders when displayed on block entities (e.g. [Supplementaries](https://modrinth.com/mod/supplementaries) Pedestals, Item Shelves)
 

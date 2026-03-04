@@ -14,6 +14,17 @@ Here's a showcase of many of the mods supported by Supplemental Patches' built-i
 <img src="assets/cirrus_clouds/5.png">
 </Carousel>
 
+## Cobblemon
+
+<Carousel>
+<img src="assets/cobblemon/1.png">
+<img src="assets/cobblemon/2.png">
+<img src="assets/cobblemon/3.png">
+<img src="assets/cobblemon/4.png">
+<img src="assets/cobblemon/5.png">
+<img src="assets/cobblemon/6.png">
+<img src="assets/cobblemon/7.png">
+</Carousel>
 
 # Enderscape
 

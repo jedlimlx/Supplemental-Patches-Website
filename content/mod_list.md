@@ -33,20 +33,20 @@ title: List of Supported Mods
 
 # Nether Mods
 
-| Mod                      | Support   | Remarks                                               |
-| ------------------------ | --------- | ----------------------------------------------------- |
-| Soulful Nether           | *Full*    |                                                       |
-| Jaden's Nether Expansion | *Partial* | **TODO**<br>- Fix issues with Betrayed effect shaders |
-| Pigsteel                 | *Full*    |                                                       |
-| Nears                    | *Full*    |                                                       |
-| Cinderscapes             | *Full*    |                                                       |
+| Mod                      | Support | Remarks |
+| ------------------------ | ------- | ------- |
+| Soulful Nether           | *Full*  |         |
+| Jaden's Nether Expansion | *Full*  |         |
+| Pigsteel                 | *Full*  |         |
+| Nears                    | *Full*  |         |
+| Cinderscapes             | *Full*  |         |
 
 # End Mods
 
-| Mod                   | Support   | Remarks                                                                                                                                                                                                                            |
-| --------------------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Enderscape            | *Partial* | **Shader Fixes**<br>- Modified End lighting & skybox to match intended atmosphere<br><br>**Note**<br>- Enderscape atmosphere can be enabled even without the mod being installed<br><br>**TODO**<br>- Darken nebula based on biome |
-| Diamonds in the Rough | *Full*    |                                                                                                                                                                                                                                    |
+| Mod                   | Support   | Remarks                                                                                                                                                                                                                                                                                                                                    |
+| --------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Enderscape            | *Partial* | **Shader Fixes**<br>- Modified End lighting & skybox to match intended atmosphere<br>- Support for Enderscape's custom End flash<br>- Support for Enderscape's custom lightmap in the End<br><br>**Note**<br>- Enderscape atmosphere can be enabled even without the mod being installed<br><br>**TODO**<br>- Darken nebula based on biome |
+| Diamonds in the Rough | *Full*    |                                                                                                                                                                                                                                                                                                                                            |
 
 
 # Biome Mods
@@ -65,24 +65,27 @@ title: List of Supported Mods
 
 # Miscellaneous
 
-| Mod                 | Support | Remarks                                                                                                                                                   |
-| ------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Enhanced Celestials | *Full*  | **Note**<br>Supports new lunar events added by data-packs as well                                                                                         |
-| Quark               | *Full*  |                                                                                                                                                           |
-| Twigs               | *Full*  |                                                                                                                                                           |
-| Species             | *Full*  | **Note**<br>- Speclights, chaindeliers, etc. will use the Spectre colour by default for ACT, even if dyed. The colour can be changed within the settings. |
-| Dye Depot           | *Full*  |                                                                                                                                                           |
-| Galosphere          | *Full*  |                                                                                                                                                           |
-| Oreganized          | *Full*  |                                                                                                                                                           |
-| Doom & Gloom        | *Full*  | **Shader Fixes**<br>- Hollers<br>- Doom & Gloom fog<br><br>**Note**<br>- Doom & Gloom fog can be enabled without the mod being installed                  |
-| Wetland Whimsy      | *Full*  |                                                                                                                                                           |
-| YUNG's Cave Biomes  | *Full*  | **Shader Fixes**<br>- Sandstorm fog                                                                                                                       |
-| Friends & Foes      | *Full*  |                                                                                                                                                           |
-| Enderman Overhaul   | *Full*  |                                                                                                                                                           |
-| Pearfection         | *Full*  |                                                                                                                                                           |
-| Beeten              | *Full*  |                                                                                                                                                           |
-| Gipples Galore      | *Full*  |                                                                                                                                                           |
-| Trailier Tales      | *Full*  |                                                                                                                                                           |
-| Frostiful           | *Full*  |                                                                                                                                                           |
-| Illager Expansion   | *Full*  |                                                                                                                                                           |
-| Aloof               | *Full*  |                                                                                                                                                           |
+| Mod                 | Support   | Remarks                                                                                                                                                                                                                                   |
+| ------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Enhanced Celestials | *Full*    | **Note**<br>Supports new lunar events added by data-packs as well                                                                                                                                                                         |
+| Quark               | *Full*    |                                                                                                                                                                                                                                           |
+| Twigs               | *Full*    |                                                                                                                                                                                                                                           |
+| Species             | *Full*    | **Note**<br>- Speclights, chaindeliers, etc. will use the Spectre colour by default for ACT, even if dyed. The colour can be changed within the settings.                                                                                 |
+| Dye Depot           | *Full*    |                                                                                                                                                                                                                                           |
+| Galosphere          | *Full*    |                                                                                                                                                                                                                                           |
+| Oreganized          | *Full*    |                                                                                                                                                                                                                                           |
+| Doom & Gloom        | *Full*    | **Shader Fixes**<br>- Hollers<br>- Doom & Gloom fog<br><br>**Note**<br>- Doom & Gloom fog can be enabled without the mod being installed                                                                                                  |
+| Wetland Whimsy      | *Full*    |                                                                                                                                                                                                                                           |
+| YUNG's Cave Biomes  | *Full*    | **Shader Fixes**<br>- Sandstorm fog                                                                                                                                                                                                       |
+| Friends & Foes      | *Full*    |                                                                                                                                                                                                                                           |
+| Enderman Overhaul   | *Full*    |                                                                                                                                                                                                                                           |
+| Pearfection         | *Full*    |                                                                                                                                                                                                                                           |
+| Beeten              | *Full*    |                                                                                                                                                                                                                                           |
+| Gipples Galore      | *Full*    |                                                                                                                                                                                                                                           |
+| Trailier Tales      | *Full*    |                                                                                                                                                                                                                                           |
+| Frostiful           | *Full*    |                                                                                                                                                                                                                                           |
+| Illager Expansion   | *Full*    |                                                                                                                                                                                                                                           |
+| Aloof               | *Full*    |                                                                                                                                                                                                                                           |
+| Cobblemon           | *Partial* | **Shader Fixes**<br>- Fixes issue with particle shaders not being applied when Cobblemon is installed<br>- Allows custom shader on various pokemon using `entityId`<br><br>**TODO**<br>- Add support for custom pokemon shaders on Fabric |
+
+
