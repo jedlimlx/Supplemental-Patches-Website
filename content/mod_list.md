@@ -1,0 +1,91 @@
+---
+title: List of Supported Mods
+---
+
+# Abnormals Mods
+
+| Mod                  | Support     | Remarks                                                                                     |
+| -------------------- | ----------------- | ------------------------------------------------------------------------------------------- |
+| Atmospheric          | *Full* |                                                                                             |
+| Autumnity            | *Full* |                                                                                             |
+| Berry Good           | *Full* |                                                                                             |
+| Buzzier Bees         | *Full* |                                                                                             |
+| Caverns & Chasms<br> | *Full* |                                                                                             |
+| Endergetic Expansion | *Full* | **Shader Fixes**<br>- Bolloom balloons / fruits<br>- Emissive entity textures (e.g. Booflo) |
+| Environmental        | *Full* |                                                                                             |
+| Savage & Ravage      | *Full* |                                                                                             |
+| Upgrade Aquatic      | *Full* | **Shader Fixes**<br>- Sonar Particles<br>- Emissive entity textures (e.g. Thrasher)         |
+
+# Supplementaries
+
+| Mod             | Support         | Remarks                                                                                                                                                                                              |
+| --------------- | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Supplementaries | *Partial* | **Shader Fixes**<br>- Fixed issue with item shaders not rendering when items are placed on block entities (e.g. pedestal, item shelf)<br><br>**TODO**<br>- Support soft fluid containers (e.g. jars) |
+| Amendments      | *Partial* | **TODO**<br>- Support wall lanterns<br>- Support soft fluids in cauldrons                                                                                                                            |
+| Snowy Spirit    | *Full*     |                                                                                                                                                                                                      |
+
+# Farmer's Delight & Add-ons
+| Mod                 | Support     | Remarks |
+| ------------------- | ----------------- | ------- |
+| Farmer's Delight    | *Full* |         |
+| My Nether's Delight | *Full* |         |
+| End's Delight       | *Full* |         |
+
+# Nether Mods
+
+| Mod                      | Support | Remarks |
+| ------------------------ | ------- | ------- |
+| Soulful Nether           | *Full*  |         |
+| Jaden's Nether Expansion | *Full*  |         |
+| Pigsteel                 | *Full*  |         |
+| Nears                    | *Full*  |         |
+| Cinderscapes             | *Full*  |         |
+
+# End Mods
+
+| Mod                   | Support   | Remarks                                                                                                                                                                                                                                                                                                                                    |
+| --------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Enderscape            | *Partial* | **Shader Fixes**<br>- Modified End lighting & skybox to match intended atmosphere<br>- Support for Enderscape's custom End flash<br>- Support for Enderscape's custom lightmap in the End<br><br>**Note**<br>- Enderscape atmosphere can be enabled even without the mod being installed<br><br>**TODO**<br>- Darken nebula based on biome |
+| Diamonds in the Rough | *Full*    |                                                                                                                                                                                                                                                                                                                                            |
+
+
+# Biome Mods
+
+| Mod                      | Support | Remarks                                                                                                                                    |
+| ------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Biomes O Plenty          | *Full*  | **Biome-specific Effects**<br>- Organic waving of flesh blocks in Visceral Heap<br>- Spiral clouds in magical biomes<br>                   |
+| Oh The Biomes We've Gone | *Full*  | **Biome-specific Effects**<br>- Special lightshafts in Pale Bog (same as the ones in the Pale Garden)<br>- Spiral clouds in magical biomes |
+
+# Particle Mods
+| Mod        | Support   | Remarks                                                                                                                                                                                    |
+| ---------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Effective  | *Partial* | Requires <kbd>Ctrl</kbd>+<kbd>G</kbd> in 1.21.1 to display mist and waterfall cascade particles.<br><br>**TODO**<br>- Apply shaders to splash particles<br>- Volumetric mist effect 👀<br> |
+| Particular | *Full*    |                                                                                                                                                                                            |
+
+
+# Miscellaneous
+
+| Mod                 | Support   | Remarks                                                                                                                                                                                                                                   |
+| ------------------- | --------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Enhanced Celestials | *Full*    | **Note**<br>Supports new lunar events added by data-packs as well                                                                                                                                                                         |
+| Quark               | *Full*    |                                                                                                                                                                                                                                           |
+| Twigs               | *Full*    |                                                                                                                                                                                                                                           |
+| Species             | *Full*    | **Note**<br>- Speclights, chaindeliers, etc. will use the Spectre colour by default for ACT, even if dyed. The colour can be changed within the settings.                                                                                 |
+| Dye Depot           | *Full*    |                                                                                                                                                                                                                                           |
+| Galosphere          | *Full*    |                                                                                                                                                                                                                                           |
+| Oreganized          | *Full*    |                                                                                                                                                                                                                                           |
+| Doom & Gloom        | *Full*    | **Shader Fixes**<br>- Hollers<br>- Doom & Gloom fog<br><br>**Note**<br>- Doom & Gloom fog can be enabled without the mod being installed                                                                                                  |
+| Wetland Whimsy      | *Full*    |                                                                                                                                                                                                                                           |
+| YUNG's Cave Biomes  | *Full*    | **Shader Fixes**<br>- Sandstorm fog                                                                                                                                                                                                       |
+| Friends & Foes      | *Full*    |                                                                                                                                                                                                                                           |
+| Enderman Overhaul   | *Full*    |                                                                                                                                                                                                                                           |
+| Pearfection         | *Full*    |                                                                                                                                                                                                                                           |
+| Beeten              | *Full*    |                                                                                                                                                                                                                                           |
+| Gipples Galore      | *Full*    |                                                                                                                                                                                                                                           |
+| Trailier Tales      | *Full*    |                                                                                                                                                                                                                                           |
+| Frostiful           | *Full*    |                                                                                                                                                                                                                                           |
+| Illager Expansion   | *Full*    |                                                                                                                                                                                                                                           |
+| Aloof               | *Full*    |                                                                                                                                                                                                                                           |
+| Cobblemon           | *Partial* | **Shader Fixes**<br>- Fixes issue with particle shaders not being applied when Cobblemon is installed<br>- Allows custom shader on various pokemon using `entityId`<br><br>**TODO**<br>- Add support for custom pokemon shaders on Fabric |
+
+

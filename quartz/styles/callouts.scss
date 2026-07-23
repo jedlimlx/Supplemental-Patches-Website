@@ -2,20 +2,34 @@
 @use "sass:color";
 
 .callout {
-  border: 1px solid var(--border);
+  border: 3px solid var(--border);
   background-color: var(--bg);
-  border-radius: 5px;
+  border-radius: 20px;
   padding: 0 1rem;
-  overflow-y: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  overflow-y: hidden; // might have issues here
   box-sizing: border-box;
+  overflow: visible;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  display:grid;
+  max-width: 100%;
+
+  & > .callout-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
 
   & > .callout-content {
     display: grid;
-    transition: grid-template-rows 0.1s cubic-bezier(0.02, 0.01, 0.47, 1);
-    overflow: hidden;
+    transition: grid-template-rows 0.3s ease;
 
-    & > :first-child {
-      margin-top: 0;
+    & > .callout-content-inner {
+      overflow: hidden;
+
+      & > :first-child {
+        margin-top: 0;
+      }
     }
   }
 
@@ -33,7 +47,9 @@
   --callout-icon-example: url('data:image/svg+xml; utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg> ');
   --callout-icon-quote: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>');
   --callout-icon-fold: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
+  --callout-icon-bib: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 19V6a2 2 0 0 1 2-2h7"/><path d="M22 19V6a2 2 0 0 0-2-2h-7"/><path d="M2 19a9 9 0 0 1 9-9h2a9 9 0 0 1 9 9"/></svg>');
 
+  // Default callouts
   &[data-callout] {
     --color: #448aff;
     --border: #448aff44;
@@ -118,28 +134,8 @@
     --callout-icon: var(--callout-icon-quote);
   }
 
-  &.is-collapsed {
-    & > .callout-title > .fold-callout-icon {
-      transform: rotateZ(-90deg);
-    }
-
-    .callout-content {
-      & > * {
-        transition:
-          height 0.1s cubic-bezier(0.02, 0.01, 0.47, 1),
-          margin 0.1s cubic-bezier(0.02, 0.01, 0.47, 1),
-          padding 0.1s cubic-bezier(0.02, 0.01, 0.47, 1);
-        overflow-y: clip;
-        height: 0;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding-bottom: 0;
-        padding-top: 0;
-      }
-      & > :first-child {
-        margin-top: -1rem;
-      }
-    }
+  &.is-collapsed > .callout-title > .fold-callout-icon {
+    transform: rotateZ(-90deg);
   }
 }
 
@@ -147,10 +143,37 @@
   display: flex;
   align-items: flex-start;
   gap: 5px;
-  padding: 1rem 0;
   color: var(--color);
 
+  // some custom changes to match kepano minimal outline, ez 03/06/2025
+  padding: 0 0.7em;
+  margin-top: -17px;
+  width: fit-content;
+  margin-left: -0.2em;
+  background-color: color-mix(in srgb, var(--color) 15%, var(--light) 85%);
+  letter-spacing: 0.05em;
+  font-variant-caps: all-small-caps;
+  padding-top: 4px;
+  margin-bottom: 5px;
+
+  border: 3px solid var(--border);
+  border-radius: 20px;
+
   --icon-size: 18px;
+
+  // Add these box-shadow properties
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1),
+  0 4px 8px rgba(0, 0, 0, 0.1);
+
+  // Optional: add a transition for smooth hover effect
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+  // Optional: add a slight lift on hover for better effect
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+  }
 
   & .fold-callout-icon {
     transition: transform 0.15s ease;
@@ -160,7 +183,7 @@
   }
 
   & > .callout-title-inner > p {
-    color: var(--color);
+    color: var(--dark);
     margin: 0;
   }
 
@@ -183,5 +206,12 @@
 
   .callout-title-inner {
     font-weight: $semiBoldWeight;
+  }
+
+  .callout-content {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
