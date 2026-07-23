@@ -77,9 +77,9 @@ The following are the parameters specified in the JSON. **Bolded** and *italiciz
 ***`glsl`*** - The relative path to the `.glsl` file. Currently only searches for files within the same folder as the `.json` file. or within a sub-folder of that folder. <br>
 
 `mat<n>` - Complementary Shaders divides the space of block IDs into blocks of `block_size` block IDs where `block_size` is a power of 2 and is at least 4. Each of these IDs are assigned to a list of blocks and within the `.glsl` code, this can be checked with `mat % ... == ?`. <br>
-`blockSize` - The number of block IDs this shader material will take up. Must be a power of 2 and greater than or equal to 4. If not specified, defaults to 4. <br>
+`block_size` - The number of block IDs this shader material will take up. Must be a power of 2 and greater than or equal to 4. If not specified, defaults to 4. <br>
 
-`color` - The color of the block for use in ACL. Can be either a list of length 4 or a single color. Colors are referenced through their resource locations. To indicate no color, use `null`. See [this](Colors-&-Tints.md) for more information. <br>`tint` - The tint of the block for use in ACL. A block can only have a color or a tint, but not both. <br>
+`blocklight` - The color / tint of the block for use in ACL. Can be either a list of length 4 or a single color / tint. Colors / tints are referenced through their resource locations. To indicate no color / tint, use `null`. Whether a color or tint has been specified is automatically determined by the program as all colors and tints should have unique ids. See [this](Colors-&-Tints.md) for more information. <br>
 
 `conditions` - The conditions for the block to be assigned the ACL color specified above. <br>
 `held_lighting` - Either `true` or `false`. Controls if the block should light up surroundings when held by the player. <br>
@@ -109,7 +109,7 @@ mossNoiseIntensity = 0.2;
   "mat0": [  
     "endergetic:poise_cluster"  
   ],  
-  "tint": "supplemental_patches:endergetic/poise_cluster"  
+  "blocklight": "supplemental_patches:endergetic/poise_cluster"  
 }
 ```
 
@@ -208,7 +208,7 @@ if (mat % 2) {
   "mat15": [  
     "quark:black_crystal_lamp:lit=false"  
   ],  
-  "color": [  
+  "blocklight": [  
     "supplemental_patches:quark/crystal_lamp/red",  
     null,    
     "supplemental_patches:quark/crystal_lamp/orange",  
@@ -255,7 +255,7 @@ mossNoiseIntensity = 0.5;
   "mat0": [  
     "wetland_whimsy:aria_mushroom_block"  
   ],  
-  "color": "supplemental_patches:wetland_whimsy/aria_mushroom",  
+  "blocklight": "supplemental_patches:wetland_whimsy/aria_mushroom",  
   "heldLighting": true  
 }
 ```

@@ -65,7 +65,7 @@ The following are the parameters specified in the JSON. **Bolded** and *italiciz
 ***`glsl`*** - The relative path to the `.glsl` file. Currently only searches for files within the same folder as the `.json` file. or within a sub-folder of that folder. <br>
 
 `mat<n>` - Complementary Shaders divides the space of entity IDs into blocks of `block_size` entity IDs where `block_size` is a power of 2 and is at least 4. Each of these IDs are assigned to a list of entities and within the `.glsl` code, this can be checked with `entityId % ... == ?`.
-`blockSize` - The number of entity IDs this shader material will take up. Must be a power of 2 and greater than or equal to 4. If not specified, defaults to 4. <br>
+`block_size` - The number of entity IDs this shader material will take up. Must be a power of 2 and greater than or equal to 4. If not specified, defaults to 4. <br>
 
 ## Examples
 

@@ -6,15 +6,15 @@ Supplemental Patches adds the ability to allow various blocks to deform over tim
 
 To apply a waving function to a block or block entity, you will need to define the `waving` attribute within the JSON files for those blocks. There are 2 options here. You may apply one of the predefined options listed in the table below or you may create a custom waving function.
 
-| Waving Function                     | Use Case                                                                                                  |
-| ----------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `minecraft:grounded_waving_foliage` | For 1-block tall foliage that is placed on the ground. This prevents the base of the texture from waving. |
-| `minecraft:hanging_waving_foliage`  | For 1-block tall foliage that is placed on the ceiling. This prevents the top of the foliage from waving. |
-| `minecraft:waving_foliage`          | For unrestricted waving. Can be used on the top half of 2 block tall foliage.                             |
-| `minecraft:waving_leaves`           | For waving leaves.                                                                                        |
-| `minecraft:waving_sugar_cane`       | For sugar cane. Waving only occurs if the `WAVING_SUGAR_CANE` option is enabled.                          |
-| `minecraft:waving_tall_foliage`     | For tall non-emissive foliage that grows from the ceiling / the ground.                                   |
-| `minecraft:waving_tall_foliage_2`   | For tall emissive foliage that grows from the ceiling  / the ground (e.g. cave vines).                    |
+| Waving Function                          | Use Case                                                                                                  |
+| ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| `minecraft:grounded_waving_foliage`      | For 1-block tall foliage that is placed on the ground. This prevents the base of the texture from waving. |
+| `minecraft:hanging_waving_foliage`       | For 1-block tall foliage that is placed on the ceiling. This prevents the top of the foliage from waving. |
+| `minecraft:waving_foliage`               | For unrestricted waving. Can be used on the top half of 2 block tall foliage.                             |
+| `minecraft:waving_leaves`                | For waving leaves.                                                                                        |
+| `minecraft:waving_sugar_cane`            | For sugar cane. Waving only occurs if the `WAVING_SUGAR_CANE` option is enabled.                          |
+| `minecraft:waving_tall_foliage`          | For tall non-emissive foliage that grows from the ceiling / the ground.                                   |
+| `minecraft:waving_tall_emissive_foliage` | For tall emissive foliage that grows from the ceiling  / the ground (e.g. cave vines).                    |
 
 To create your own custom waving function, you will need to define a GLSL file
  - a `.glsl` file to store shader code and 

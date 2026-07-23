@@ -28,7 +28,7 @@ void DoDoomAndGloomFog(inout vec4 color, float lViewPos, float fogOverride) {
 
 The function defined should take in the colour and the distance to the point that is being rendered (i.e. `lViewPos`). It can also take in other parameters if you want, as shown here. This function will be called when it is patched into `mainFog.glsl`.
 
-Breaking down this function, we see that the fog factor is defined as the distance mulitplied by some fog intensity. Then, the final factor is computed as `1.0 - exp(fog^2)`. This is fairly standard for fogs which should fade to the uniform fog colour exponentially with distance. The colour fade is defined in the final line, where the existing colour is mixed with some factor colour.
+Breaking down this function, we see that the fog factor is defined as the distance mulitplied by some fog intensity. Then, the final factor is computed as `1.0 - exp(-fog^2)`. This is fairly standard for fogs which should fade to the uniform fog colour exponentially with distance. The colour fade is defined in the final line, where the existing colour is mixed with the fog colour.
 
 ## Fog Injection
 

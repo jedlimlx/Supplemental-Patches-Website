@@ -69,14 +69,22 @@ The following are the parameters specified in the JSON. **Bolded** and *italiciz
 ***`glsl`*** - The relative path to the `.glsl` file. Currently only searches for files within the same folder as the `.json` file. or within a sub-folder of that folder. <br>
 
 `mat<n>` - Complementary Shaders divides the space of block IDs into blocks of `block_size` block IDs where `block_size` is a power of 2 and is at least 4. Each of these IDs are assigned to a list of blocks and within the `.glsl` code, this can be checked with `mat % ... == ?`. Blocks within `mat<n>`, where `n` is an odd number, are taken as not being whole blocks for the purposes of Advanced Coloured Lighting (ACL). <br>
-`blockSize` - The number of block IDs this shader material will take up. Must be a power of 2 and greater than or equal to 4. If not specified, defaults to 4. <br>
+`block_size` - The number of block IDs this shader material will take up. Must be a power of 2 and greater than or equal to 4. If not specified, defaults to 4. <br>
 
-`color` - The color of the block for use in ACL. Can be either a list of length `block_size` or a single color. Colors are referenced through their resource locations. To indicate no color, use `null`. See [this](Colors-&-Tints.md) for more information. <br>
-`conditions` - The conditions for the block to be assigned the ACL color specified above. <br>
+`blocklight` - The color of the block for use in ACL. This can be one of
+- a list of length `block_size`
+- a single color
+- a JSON object indicating different possible `color`s under certain `conditions`
+
+Colors are referenced through their resource locations. To indicate no color, use `null`. See the exact form for input, see [this](Colors-&-Tints.md). <br>
+`light_groups` - Specifies what Photonics light group the block should be added to. The input format is similar `blocklight`. For more information, see [this](photonics_compatibility) page.
+
 `held_lighting` - Either `true` or `false`. Controls if the block should light up surroundings when held by the player. <br>
 
 `waving` - Specifies the type of waving motion that should be applied to the block. See ... for more details. <br>
-`reflection_handler` - Specifies how reflections should be handled for this block. For more information, see [this](reflection_handlers) page. Can be either a list of length `block_size` or a single handler to be applied to all IDs within this block. <br>
+`reflection_handlers` - Specifies how reflections should be handled for this block. For more information, see [this](reflection_handlers) page. Can be either a list of length `block_size` or a single handler to be applied to all IDs within this block. <br>
+
+`light_modifiers` - Specifies which Photonics light modifiers are applied for this block. Similar to `reflection_handlers`, can either be specified as a single modifier applied to all IDs within the block or as a list of length `block_size`. <br>
 
 `needs_voxelization` - Specifies if voxelization is needed. Voxelization, when ACL is enabled, allows blocks to identify what blocks surround them. <br>
 
@@ -132,11 +140,13 @@ Finally, we multiply the emission by `GLOWING_ORE_MULT` which is a setting that 
   "mat2": [
     "oreganized:deepslate_lead_ore"
   ],
-  "color": "supplemental_patches:oreganized/lead_ore",  
-  "conditions": [  
-    "GLOWING_ORE_LEAD",  
-    "DO_IPBR_LIGHTS"  
-  ]  
+  "blocklight": {
+    "color": "supplemental_patches:oreganized/lead_ore",  
+    "conditions": [  
+      "GLOWING_ORE_LEAD",  
+      "DO_IPBR_LIGHTS"  
+    ]
+  }  
 }
 ```
 
@@ -204,7 +214,7 @@ Finally, `color.r` is multiplied by `1.0 - emission * 0.05`. This decreases the 
   "mat2": [  
     "upgrade_aquatic:prismarine_coral_block"  
   ],  
-  "color": "supplemental_patches:upgrade_aquatic/prismarine"  
+  "blocklight": "supplemental_patches:upgrade_aquatic/prismarine"  
 }
 ```
 #### Paper Lantern (Twigs)
@@ -274,6 +284,6 @@ Finally, we shift the color of the lantern to blue and add distant light bokeh i
     "quark:paper_lantern",  
     "quark:paper_lantern_sakura"  
   ],  
-  "color": "minecraft:lantern"  
+  "blocklight": "minecraft:lantern"  
 }
 ```

@@ -190,6 +190,7 @@ Here's a showcase of many of the mods supported by Supplemental Patches' built-i
 <img src="assets/bwg/5.png">
 <img src="assets/bwg/6.png">
 </Carousel>
+
 # Species
 
 <Carousel>

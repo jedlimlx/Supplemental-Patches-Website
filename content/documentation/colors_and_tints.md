@@ -32,6 +32,61 @@ For example, if you want to have an option to change the color of light emitted,
 
 ```json
 {
-    "code": "vec4(yourColor, 0.0)"
+  "code": "vec4(yourColor, 0.0)"
 }
 ```
+
+
+## Specifying a Blocklight
+
+> [!info] Take Note
+> 
+> Ensure that your names for each color and tint do not overlap. If they do, the name for the color will take precedence as the shader patcher checks the list of colors first, before checking the list of tints if no valid color with the given name is found.
+
+After creating your blocklight colors, you will need to assign them to a block. To achieve this, we can use the `blocklight` parameter within the shader JSONs for [opaque](opaque_blocks.md) and [translucent](transluccent) blocks. There are 4 possible ways of specifying the blocklight.
+
+If there are no conditions on which blocklight colors to apply, we can apply the lighting just by itself:
+
+```json
+{
+  ...,
+  "blocklight": "minecraft:candle"
+}
+```
+
+If there is a single condition that determines whether or not a single color is applied, we can specify the condition and blocklight color as such:
+
+```json
+{
+  ...,
+  "blocklight": {
+    "color": "minecraft:candle",
+    "conditions": [
+      "DO_CANDLE_LIGHTING"
+    ]
+  }
+}
+```
+
+If there are multiple conditions that determine which colors are applied, we can specify the condition and corresponding blocklight color in a list as such:
+
+```json
+{
+  ...,
+  "blocklight": [
+    {
+	  "color": "minecraft:red_candle",
+	  "conditions": [
+	    "DO_COLORED_CANDLE_LIGHTING"
+	  ]
+    },
+    {
+      "color": "minecraft:candle"
+    }
+  }
+}
+```
+
+The lack of a condition being specified in the last element of the list means that if all previous conditions are false, then the final specified blocklight color will be used.
+
+In any of these cases, if different colours need to be applied for different materials within the same material shader, the single `color` parameter can be swapped out for a list of blocklight colors.

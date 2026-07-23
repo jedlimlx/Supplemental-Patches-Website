@@ -1,6 +1,76 @@
 ---
 title: Technical Changelog
 ---
+## 1.0.0
+
+It has been awhile from the last update. Thanks for your patience! After much work, I believe the mod is ready to be moved out of the beta phase. The mod has been refactored into a multiloader structure to make it easier to maintain and some APIs have changed (but should be stable now unless otherwise stated). I have also went through most of the existing shaders and made many improvements.
+
+That being said, going forward updates will be slower as I will be entering university soon but I will try my best. Please report any bugs on the issue tracker on GitHub or in the Euphoria Patches discord server. Thanks again!
+
+**Fixes**
+- Fix off-by-one error in addition of `colortex` buffers
+- Fix shaders not being applied to `suppsquared:copper_lantern`
+- Fix issues with Doom & Gloom crashing the game
+- Fix bug causing green shading for block entities without IDs
+- Fix missing shaders for `caverns_and_chasms:floodlight` and related blocks
+- Fix issues with shaders for custom Pokemon not working on Fabric
+- Fix handheld lighting not working for `mynethersdelight:powdery_torch`
+- Fix missing shaders for `netherexp:wall_ancient_torch` and `netherexp:ancient_campfire`
+- Fix issues with Pokemon shaders not working on Fabric 1.21.1
+
+**Additions**
+- Significantly improved and added shaders to the following mods
+	- Supplementaries (updated to 3.5)
+	- Supplementaries Squared
+	- Amendments
+	- Galosphere
+	- Doom and Gloom (updated to Minecraft 1.21.1)
+	- Spawn (updated to Minecraft 1.21.1)
+	- The Between
+	- The Beyond?
+	- Caverns & Chasms (updated to Minecraft 1.21.1)
+	- Enderscape
+		- Add option `DARK_ES_END_FLASH` to configure End Flashes to reduce ambient lighting instead of increasing it
+		- Add options `SOFTEN_END_SHADOWS` and `SOFTEN_END_SHADOWS_I` to soften shadows from top-down End ambient lighting. Setting to `0` removes shadows entirely.
+	- Cobblemon (more Pokemon shaders :D)
+	- My Nether's Delight (updated to 1.10)
+	- Jaden's Nether Expansion (updated to Minecraft 1.21.1)
+	- Soulful Nether
+- Add compatibility with Photonics for the following mods (i.e. ray-tracing for emissive blocks)
+	- Enderscape
+	- Cinderscapes
+	- Frostiful
+	- Biomes O Plenty
+	- Oh The Biomes We've Gone
+- Improvements to cirrus clouds, including support for pixelation and variable cloud cover
+- Add support for Mod Menu / Better ModList
+- Add ability to control injection points in shader mixins using Regex (works across multiple lines too)
+- Add various mod configurations using YetAnotherConfigLib
+
+**Changes**
+- Updated to *Minecraft 26.2*
+- Updated to *Complementary Shaders r5.8.1 + Euphoria Patches 1.9.3*
+- Refactor mod into a multiloader structure that makes it much easier to maintain
+- Ensure that errors within the shaderpack will be automatically printed out when the player enters the world
+- Shorten patched shaderpack name to `Supplemental Patches <version number>`
+- Reworked the settings page to ensure that all resource-packs are able to add their own settings
+- Removed spiral clouds above magical biomes as the default cloud map has been changed
+
+**Breaking Changes**
+- Standardise all folders to use plurals
+	- `entity` -> `entities`
+	- `block_entity` -> `block_entities`
+	- `translucent` -> `translucents`
+- Modify the way that colours are specified within material shader JSONs
+	- Field `color` is renamed to `blocklight`
+	- Field `conditions` is moved under `blocklight` to allow different `color`s based on different `conditions`
+	- See the rewritten shaders within the built-in resource-pack for examples
+- Resource-packs now require an `entrypoint.json` within the `settings` folder for shader settings to work
+	- Shader settings for each resource-pack will be separated and placed in individual folders
+- Renamed waving function `minecraft:waving_tall_foliage_2` -> `waving_tall_emissive_foliage`
+
+
+---
 ## 0.8.0-beta
 
 
@@ -28,6 +98,7 @@ title: Technical Changelog
 - Updated to *Complementary Shaders r5.7.1 + Euphoria Patches 1.8.6*
 - `ANIMATED_END_LAMP` has been changed to be disabled by default
 
+---
 ## 0.7.1-beta
 
 <img src="assets/versions/0.7.1-beta.png">

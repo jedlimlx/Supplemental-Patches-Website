@@ -1,8 +1,7 @@
 ---
 title: Deferred Materials
 ---
-
-Deferred materials are material properties which run on the [deferred pass](https://shaders.properties/current/reference/programs/deferred/) of the shader. This means that it runs after the basic material shaders which you may have defined earlier. They are typically used to tint the color of reflections on metallic blocks.
+Deferred materials are material properties which run on the [deferred pass](https://shaders.properties/current/reference/programs/deferred/) of the shader, which lies in between the rendering of opaque and translucent blocks. This pass is typically used to handle reflections. As such, they are typically used to tint the color of reflections on metallic blocks.
 
 To create a shader for deferred materials, you will need to create 
 - a `.glsl` file to store shader code and 
@@ -23,7 +22,7 @@ You have access to the following within the shader code. The data type is indica
 #### Outputs
 The following can be modified within the code. The data type is indicated in front. This is a non-exhaustive list and only touches on the most commonly used variables.
 
-`float intenseFresnel` - Controls the strength of the frensel effect. Typically set to `1.0`. <br>
+`float intenseFresnel` - Controls the strength of the fresnel effect. Typically set to `1.0`. <br>
 `vec3 reflectColor` - Tints reflections on blocks with this deferred material.
 
 ## JSON Format

@@ -51,7 +51,7 @@ However, as the full list of biomes is only available once the world has been lo
 - Wetland Whimsy
 - YUNG's Cave Biomes
 
-Biomes from other mods will require a shader reload to upon joining the world, in order for the relevant constants, in the format `MOD_BIOME_<UPPERCASE_BIOME_ID>` to be added. In addition, they should be checked against a new uniform `modded_biomes`.
+Biomes from other mods will require a shader reload to upon joining the world, in order for the relevant constants, in the format `MOD_BIOME_<UPPERCASE_BIOME_ID>` to be added. In addition, they should be checked against a new uniform `moddedBiome`.
 
 ## Adding Uniforms
 

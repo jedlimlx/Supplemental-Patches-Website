@@ -15,6 +15,7 @@ The following are the parameters specified in the JSON. They are all required.
 **`type`** - This is one of `after`, `before` and `replace`. This determines how the code is placed with respect to the `key`.
 `key` - This determines the location where the code is patched.
 `code` - The path of the GLSL file where the code to be patched is stored.
+`regex` - Defaults to `false`. If set to `true`, a regex expression may be placed into the parameter `key`.
 
 ## Examples
 

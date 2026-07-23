@@ -27,6 +27,8 @@ assets
 ...
 ```
 
+Note that you should choose a unique folder name to place the `euphoria` folder in. This will become important in subsequent tutorials where shader settings are added. Furthermore, this will avoid accidentally overriding the shaders from a different resource-pack.
+
 # Creating Block Shaders
 
 Now, let's create a new shader for Galosphere's Allurite Lamp.
@@ -151,7 +153,7 @@ Now, we can define the JSON file as follows. Save the JSON in the same folder as
   "mat0": [
     "galosphere:allurite_lamp"
   ],
-  "color": "yourresourcepackname:allurite_lamp",
+  "blocklight": "yourresourcepackname:allurite_lamp",
   "held_lighting": true
 }
 ```
@@ -163,7 +165,7 @@ Now, we can define the JSON file as follows. Save the JSON in the same folder as
 
 `mat0` is a list of all blocks the shader should be applied to. By default, `mat0` through `mat3` can be defined, with the number being obtainable within the shader code using `mat % 4`. However, note that for light-emitting blocks such as this, only `mat0` and `mat2` can be used (if you want coloured lighting).
 
-`color` is the resource-path of the colour file which we define in the next section. If you want to make use of a colour that is already defined by the base Euphoria Patches, set it to `minecraft:block_type`. Check out the full list [here](https://github.com/jedlimlx/supplemental-patches/tree/1.20.1-forge/src/main/resources/assets/minecraft/euphoria/colors).
+`blocklight` is the resource-path of the colour file which we define in the next section. If you want to make use of a colour that is already defined by the base Euphoria Patches, set it to `minecraft:block_type`. Check out the full list [here](https://github.com/jedlimlx/supplemental-patches/tree/1.20.1-forge/src/main/resources/assets/minecraft/euphoria/colors).
 
 `held_lighting` defines whether or not the block should emit light when held in the player's hands. In this case, since this is a bright lamp, we want this to be the case.
 
@@ -187,4 +189,6 @@ The file contains a single line of GLSL code that outputs a `vec4`. The first 3 
 
 # Conclusion
 
-With that, we have built our very first block shaders for Supplemental Patches!
+With that, we have built our very first block shaders for Supplemental Patches! The folder structure you should have now is shown below:
+
+
