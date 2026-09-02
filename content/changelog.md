@@ -3,9 +3,11 @@ title: Technical Changelog
 ---
 ## 1.0.0
 
+<img src="assets/versions/1.0.0.png">
+
 It has been awhile from the last update. Thanks for your patience! After much work, I believe the mod is ready to be moved out of the beta phase. The mod has been refactored into a multiloader structure to make it easier to maintain and some APIs have changed (but should be stable now unless otherwise stated). I have also went through most of the existing shaders and made many improvements.
 
-That being said, going forward updates will be slower as I will be entering university soon but I will try my best. Please report any bugs on the issue tracker on GitHub or in the Euphoria Patches discord server. Thanks again!
+That being said, going forward updates will be slower as I will be beginning undergraduate studies soon but I will try my best. Please report any bugs on the issue tracker on GitHub or in the Euphoria Patches discord server. Thanks again!
 
 **Fixes**
 - Fix off-by-one error in addition of `colortex` buffers
@@ -17,6 +19,7 @@ That being said, going forward updates will be slower as I will be entering univ
 - Fix handheld lighting not working for `mynethersdelight:powdery_torch`
 - Fix missing shaders for `netherexp:wall_ancient_torch` and `netherexp:ancient_campfire`
 - Fix issues with Pokemon shaders not working on Fabric 1.21.1
+- Fix shaders breaking when shaders are re-injected
 
 **Additions**
 - Significantly improved and added shaders to the following mods
@@ -26,30 +29,36 @@ That being said, going forward updates will be slower as I will be entering univ
 	- Galosphere
 	- Doom and Gloom (updated to Minecraft 1.21.1)
 	- Spawn (updated to Minecraft 1.21.1)
+	- Windswept (updated to Minecraft 1.21.1)
 	- The Between
-	- The Beyond?
 	- Caverns & Chasms (updated to Minecraft 1.21.1)
-	- Enderscape
+	- Enderscape (updated to 3.0.0)
 		- Add option `DARK_ES_END_FLASH` to configure End Flashes to reduce ambient lighting instead of increasing it
-		- Add options `SOFTEN_END_SHADOWS` and `SOFTEN_END_SHADOWS_I` to soften shadows from top-down End ambient lighting. Setting to `0` removes shadows entirely.
+		- Add options `SOFTEN_END_SHADOWS` and `SOFTEN_END_SHADOWS_I` to soften shadows from top-down End ambient lighting. Setting to `0` removes shadows entirely
+		- Add void fog below and above a configurable altitude, defaulting where fog starts in Enderscape at `y = 0` and `y = 230`
+		- Add compatibility with Euphoria Patches' new black holes which will distort the nebula
 	- Cobblemon (more Pokemon shaders :D)
 	- My Nether's Delight (updated to 1.10)
 	- Jaden's Nether Expansion (updated to Minecraft 1.21.1)
-	- Soulful Nether
+	- YUNG's Cave Biomes (updated to Minecraft 26.1)
+	- The Copperier Age
 - Add compatibility with Photonics for the following mods (i.e. ray-tracing for emissive blocks)
 	- Enderscape
 	- Cinderscapes
 	- Frostiful
 	- Biomes O Plenty
 	- Oh The Biomes We've Gone
+- Add compatibility with Windlink
 - Improvements to cirrus clouds, including support for pixelation and variable cloud cover
 - Add support for Mod Menu / Better ModList
 - Add ability to control injection points in shader mixins using Regex (works across multiple lines too)
 - Add various mod configurations using YetAnotherConfigLib
+- Add Euphoria Patches as a dependency to ensure that there are no errors from injecting into the wrong version
+- Updated Russian translations thanks to @**[mpustovoi](https://github.com/mpustovoi)**
 
 **Changes**
-- Updated to *Minecraft 26.2*
-- Updated to *Complementary Shaders r5.8.1 + Euphoria Patches 1.9.3*
+- Updated to *Minecraft 26.1* and *Minecraft 26.2*
+- Updated to *Complementary Shaders r5.9 + Euphoria Patches 1.10*
 - Refactor mod into a multiloader structure that makes it much easier to maintain
 - Ensure that errors within the shaderpack will be automatically printed out when the player enters the world
 - Shorten patched shaderpack name to `Supplemental Patches <version number>`

@@ -81,7 +81,8 @@ Colors are referenced through their resource locations. To indicate no color, us
 
 `held_lighting` - Either `true` or `false`. Controls if the block should light up surroundings when held by the player. <br>
 
-`waving` - Specifies the type of waving motion that should be applied to the block. See ... for more details. <br>
+`waving` - Specifies the type of waving motion that should be applied to the block. See [[waving_objects]] for more details. 
+`windlink` - Species the type of waving motion that should be applied to the block if the Windlink mod is installed. See [[windlink_compatibility]] for more details. <br>
 `reflection_handlers` - Specifies how reflections should be handled for this block. For more information, see [this](reflection_handlers) page. Can be either a list of length `block_size` or a single handler to be applied to all IDs within this block. <br>
 
 `light_modifiers` - Specifies which Photonics light modifiers are applied for this block. Similar to `reflection_handlers`, can either be specified as a single modifier applied to all IDs within the block or as a list of length `block_size`. <br>
