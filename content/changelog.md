@@ -1,6 +1,25 @@
 ---
 title: Technical Changelog
 ---
+## 1.02
+
+<img src="assets/versions/1.0.2.png">
+
+**Fixes**
+- Fix bug with buffer injection
+- Fix bug where regex would end up in an endless loop and cause a stack overflow
+
+**Additions**
+- Update Oreganized support to latest version
+- Update Windlink support to the latest version
+
+**Changes**
+- Updated to *Complementary Shaders r5.9.3 + Euphoria Patches 1.10.5*
+
+## 1.01
+
+This is a hotfix to fix a major issue where the mod would delete everything inside the shader folder.
+
 ## 1.0.0
 
 <img src="assets/versions/1.0.0.png">
